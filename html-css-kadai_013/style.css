@@ -1,0 +1,135 @@
+/* pc表示 */
+/* #logo > img{
+  margin-left: 30px;
+} */
+@media screen  and (min-width:768px) {
+  
+
+body{
+  max-width: 1080px;
+  min-width: 960px;
+  margin: 0 auto 0 auto;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+}
+#nav-sp{
+  display: none;
+}
+#menu-sp{
+  display: none;
+}
+/* pc ナビゲーション */
+#nav-pc{
+  padding-top: 15px;
+  
+}
+#nav-pc > a{
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 14px;
+}
+#nav-pc > a:link {
+  color: #0d0d0d;
+}
+#nav-pc > a:visited {
+  color: #0d0d0d;
+}
+ /* メイン */
+main{
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+ h8{
+  color:black;
+  font-weight: bold;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  
+}
+p{
+  font-family: 'Courier New', Courier, monospace;
+}
+main > img{
+  width: 100%;
+  
+}
+}
+
+
+/* スマホ用 */
+@media screen and (max-width:767px){
+
+  body{
+    min-width: 375px;
+    margin: 0;
+  }
+  /* pcのナビ非表示に */
+
+  #nav-pc{
+        display: none!important;
+  }
+  #menu-sp{
+    float: right;
+    padding: 0;
+  }
+ /* スマホ用ナビゲーション */
+  #nav-sp{
+   background-color: #ce933e;
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   display: none;
+   z-index: 100;
+  }
+  #close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  /* ナビゲーションメニュー用ロゴ */
+  #logo-sp{
+    margin: 80px 0 30px 20px;
+  }
+  #nav-sp > a{
+    display: block;
+  }
+  #nav-sp > a:link{
+    color: #ffffff;
+  }
+  #nav-sp > a:visited{
+    color:#ffffff;
+  }
+  #nav-sp > a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  #nav-sp > a:active{
+    color: #ffffff;
+  }
+  #nav-sp > .menu	{
+    text-decoration: none;
+    display: block;
+    margin: 0 20px;
+    height: 44px;
+    font-size: 16px;
+    background-image: url("images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+  /* メイン */
+ main{
+  padding-top: 15px;
+ }
+  main > img{
+    width: 100%;
+  }
+  h8{
+    font-weight: bold;
+  }
+  p{
+    font-family: 'Courier New', Courier, monospace;
+  }
+}
